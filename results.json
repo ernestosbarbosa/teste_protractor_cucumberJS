@@ -1,0 +1,62 @@
+[
+  {
+    "elements": [
+      {
+        "id": "calcular;fazer-calculos-com-adição",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "Fazer calculos com adição",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "name": "que eu esteja na tela de calculos",
+            "result": {
+              "status": "passed",
+              "duration": 533682082
+            },
+            "line": 5,
+            "match": {
+              "location": "/Users/lucasfraga/Documents/Lucas/teste_protractor_cucumberJS/features/step_definitions/calculadoraStep.js:14"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "name": "eu fizer calculos de adicao",
+            "result": {
+              "status": "passed",
+              "duration": 1097261
+            },
+            "line": 6,
+            "match": {
+              "location": "/Users/lucasfraga/Documents/Lucas/teste_protractor_cucumberJS/features/step_definitions/calculadoraStep.js:21"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Entao ",
+            "name": "devo visualizar o resultado da adicao",
+            "result": {
+              "status": "failed",
+              "duration": 226660,
+              "error_message": "TypeError: Cannot read property 'isPresent' of undefined\n    at ProtractorExpectedConditions.presenceOf (/usr/local/lib/node_modules/protractor/built/expectedConditions.js:341:30)\n    at ProtractorExpectedConditions.visibilityOf (/usr/local/lib/node_modules/protractor/built/expectedConditions.js:381:30)\n    at World.<anonymous> (/Users/lucasfraga/Documents/Lucas/teste_protractor_cucumberJS/features/step_definitions/calculadoraStep.js:27:25)\n    at process._tickCallback (internal/process/next_tick.js:150:11)"
+            },
+            "line": 7,
+            "match": {
+              "location": "/Users/lucasfraga/Documents/Lucas/teste_protractor_cucumberJS/features/step_definitions/calculadoraStep.js:26"
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "calcular",
+    "keyword": "Funcionalidade",
+    "line": 2,
+    "name": "Calcular",
+    "tags": [],
+    "uri": "/Users/lucasfraga/Documents/Lucas/teste_protractor_cucumberJS/features/calculadora.feature"
+  }
+]
