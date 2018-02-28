@@ -1,62 +1,170 @@
 [
   {
+    "keyword": "Funcionalidade",
+    "name": "Calcular",
+    "line": 2,
+    "id": "calcular",
+    "tags": [],
+    "uri": "features\\calculadora.feature",
     "elements": [
       {
         "id": "calcular;fazer-calculos-com-adição",
         "keyword": "Scenario",
         "line": 4,
         "name": "Fazer calculos com adição",
+        "tags": [],
+        "type": "scenario",
         "steps": [
           {
             "arguments": [],
             "keyword": "Dado ",
+            "line": 5,
             "name": "que eu esteja na tela de calculos",
+            "match": {
+              "location": "features\\step_definitions\\calculadoraStep.js:8"
+            },
             "result": {
               "status": "passed",
-              "duration": 533682082
-            },
-            "line": 5,
-            "match": {
-              "location": "/Users/lucasfraga/Documents/Lucas/teste_protractor_cucumberJS/features/step_definitions/calculadoraStep.js:14"
+              "duration": 2207000000
             }
           },
           {
             "arguments": [],
             "keyword": "Quando ",
+            "line": 6,
             "name": "eu fizer calculos de adicao",
+            "match": {
+              "location": "features\\step_definitions\\calculadoraStep.js:16"
+            },
             "result": {
               "status": "passed",
-              "duration": 1097261
-            },
-            "line": 6,
-            "match": {
-              "location": "/Users/lucasfraga/Documents/Lucas/teste_protractor_cucumberJS/features/step_definitions/calculadoraStep.js:21"
+              "duration": 421000000
             }
           },
           {
             "arguments": [],
             "keyword": "Entao ",
-            "name": "devo visualizar o resultado da adicao",
-            "result": {
-              "status": "failed",
-              "duration": 226660,
-              "error_message": "TypeError: Cannot read property 'isPresent' of undefined\n    at ProtractorExpectedConditions.presenceOf (/usr/local/lib/node_modules/protractor/built/expectedConditions.js:341:30)\n    at ProtractorExpectedConditions.visibilityOf (/usr/local/lib/node_modules/protractor/built/expectedConditions.js:381:30)\n    at World.<anonymous> (/Users/lucasfraga/Documents/Lucas/teste_protractor_cucumberJS/features/step_definitions/calculadoraStep.js:27:25)\n    at process._tickCallback (internal/process/next_tick.js:150:11)"
-            },
             "line": 7,
+            "name": "devo visualizar o resultado da adicao",
             "match": {
-              "location": "/Users/lucasfraga/Documents/Lucas/teste_protractor_cucumberJS/features/step_definitions/calculadoraStep.js:26"
+              "location": "features\\step_definitions\\calculadoraStep.js:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2025000000
             }
           }
-        ],
+        ]
+      },
+      {
+        "id": "calcular;fazer-novos-calculos-de-adição",
+        "keyword": "Scenario",
+        "line": 9,
+        "name": "Fazer novos calculos de adição",
         "tags": [],
-        "type": "scenario"
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 10,
+            "name": "eu fizer novos calculos de adicao",
+            "match": {
+              "location": "features\\step_definitions\\calculadoraStep.js:28"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 269000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Entao ",
+            "line": 11,
+            "name": "devo visualizar o novo resultado de adicao",
+            "match": {
+              "location": "features\\step_definitions\\calculadoraStep.js:32"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1965000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "calcular;fazer-calculos-de-subtração",
+        "keyword": "Scenario",
+        "line": 13,
+        "name": "Fazer calculos de subtração",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 14,
+            "name": "eu fizer calculos de subtracao",
+            "match": {
+              "location": "features\\step_definitions\\calculadoraStep.js:38"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 330000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Entao ",
+            "line": 15,
+            "name": "devo visualizar resultado de subtracao",
+            "match": {
+              "location": "features\\step_definitions\\calculadoraStep.js:42"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1890000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "calcular;fazer-novos-calculos-de-subtração",
+        "keyword": "Scenario",
+        "line": 17,
+        "name": "Fazer novos calculos de subtração",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 18,
+            "name": "eu fizer novos calculos de subtracao",
+            "match": {
+              "location": "features\\step_definitions\\calculadoraStep.js:48"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 323000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Entao ",
+            "line": 19,
+            "name": "devo visualizar o novo resultado de subtracao",
+            "match": {
+              "location": "features\\step_definitions\\calculadoraStep.js:52"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 1943000000,
+              "error_message": "AssertionError\n    + expected - actual\n\n    -30\n    +100000\n\n    at page.result.getText.then.text (C:\\wamp64\\www\\qa\\github\\teste_protractor_cucumberJS\\features\\step_definitions\\calculadoraStep.js:54:25)\n    at elementArrayFinder_.then (C:\\Users\\jose.barbosa\\AppData\\Roaming\\npm\\node_modules\\protractor\\lib\\element.ts:840:22)\n    at ManagedPromise.invokeCallback_ (C:\\Users\\jose.barbosa\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\promise.js:1366:14)\n    at TaskQueue.execute_ (C:\\Users\\jose.barbosa\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\promise.js:2970:14)\n    at TaskQueue.executeNext_ (C:\\Users\\jose.barbosa\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\promise.js:2953:27)\n    at asyncRun (C:\\Users\\jose.barbosa\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\promise.js:2813:27)\n    at C:\\Users\\jose.barbosa\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\promise.js:676:7\n    at <anonymous>\n    at process._tickCallback (internal/process/next_tick.js:188:7)"
+            }
+          }
+        ]
       }
-    ],
-    "id": "calcular",
-    "keyword": "Funcionalidade",
-    "line": 2,
-    "name": "Calcular",
-    "tags": [],
-    "uri": "/Users/lucasfraga/Documents/Lucas/teste_protractor_cucumberJS/features/calculadora.feature"
+    ]
   }
 ]
